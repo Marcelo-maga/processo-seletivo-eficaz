@@ -1,0 +1,90 @@
+
+.cadastro {
+  grid-area: CO;
+}
+
+.cadastro h1 {
+  text-align: center;
+}
+
+.title {
+  margin: 30px 0 20px 0;
+
+  color: #56CCF2;
+
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.form-container {
+  display: grid;
+  grid-template-areas: 
+  'PersonalEmail Name'
+  'Email         Phone'
+  'Rua           NumberHouse'
+  'Comple        Cidade'
+  'CEP           cityUF';
+  grid-template-columns: 50% 50%;
+
+  padding: 10px 80px 10px 80px;
+
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input label {
+  margin-bottom: 5px;
+  color: #868686;
+}
+
+.input input{
+  width: 90%;
+  height: 25px;
+
+  margin-bottom: 10px;
+
+  border-radius: 5px;
+  border: 2px solid #e0e0e0;
+}
+
+
+.PersonalEmail{grid-area: PersonalEmail;} 
+.Name{grid-area: Name;}
+.Email {grid-area: Email;}        
+.Phone{grid-area:Phone ;}
+.Rua {grid-area: Rua;}          
+.NumberHouse{grid-area: NumberHouse;}
+.Comple {grid-area: Comple;}       
+.CEP {grid-area: CEP;}
+
+.Cidade{
+  grid-area: cityUF;
+  width: 63%;
+}
+
+.UF{
+  grid-area: cityUF;
+  width: 30%;
+  margin-left: 63%;
+}
+
+
+.btn-submit-container{
+  width: 100%;
+}
+
+.btn-submit-container button{
+  width: 40%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+
+  margin-top: 25px;
+  margin-left: 153%;
+
+  color: #ffff;
+  background-color: #27ae60;
+}
