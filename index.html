@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Importações de estilos e scripts -->
+  <link rel="stylesheet" href="./public/styles/globalStyles.css">
+  <script defer src="./public/scripts/index.js"></script>
+
+  <link rel="shortcut icon" type="imagex/png" href="public/assets/favicon.png">
+  <title>Eficaz</title>
+</head>
+<body class="body">
+  
+  <div class="toast">
+
+  </div>
+
+  <section class="menu">  
+    <img class="logo" src="/public/assets/logo.png" alt="Logo da empresa">
+    <button id="register" class="btn" ><img class="img" src="public/assets/user.svg">Cadastro</button>
+    <button id="users" class="btn" ><img class="img" src="public/assets/users.svg">Lista de casdastrados</button>
+  </section>
+
+  <section class="cadastro">
+    <div class="container">
+      <h1 class="title">CADASTRO</h1>
+        <form class="form-container">
+
+          <div class="input PersonalEmail">
+            <label for="seu_email">E-mail pessoal do candidato</label>
+            <input required id="seu_email" type="email" name="seu_email">
+          </div>
+  
+          <div class="input Email">
+            <label for="email">E-mail</label>
+            <input required id="email" name="email" type="email">
+          </div>
+ 
+          <div class="input Rua">
+            <label for="rua">Rua</label>
+            <input required id="rua" name="rua" type="text">  
+          </div>
+
+          <div class="input Comple">
+            <label for="complemento">Complemento</label>
+            <input id="complemento" name="complemento" type="text">  
+          </div>
+          
+          <div class="input CEP" >
+            <label for="cep">CEP</label>
+            <input required id="cep" name="cep" type="text">
+          </div>
+
+          <div class="input Name" >
+            <label for="nome">Nome completo</label>
+            <input required id="nome" name="nome" type="text">  
+          </div>
+
+          <div class="input Phone" >
+            <label for="telefone">Telefone (DDD)</label>
+            <input required id="telefone" name="telefone" type="text">
+          </div>
+  
+          <div class="input NumberHouse" >
+            <label for="numero">N.°</label>
+            <input required id="numero" name="numero" type="number">
+          </div>
+  
+          <div class="input Bairro" >
+            <label for="bairro">Bairro</label>
+            <input required id="bairro" name="bairro" type="text">
+          </div>
+
+          <div class="input cityUF Cidade" >
+            <label for="cidade">Cidade</label>
+            <input required id="cidade" name="cidade" type="text">
+          </div>
+
+          <div class="input cityUF UF" >
+            <label for="uf">UF</label>
+            <input required id="uf" name="uf" type="text">
+          </div>
+
+          <div class="btn-submit-container">
+            <button class='btnSubmit'>Cadastrar</button>
+          </div>
+
+        </form>
+    </div>
+  </section>
+
+  <section class="userList hide ">
+    <div class="container">
+      <h2 class="message hide">Usuario deletado com sucesso</h2>
+      <h3 class="header">Lista de canditados</h3>
+      <h2 class="filter">FILTROS</h2>
+      <table class="tableUsers">
+        <thead>
+          <tr class="fixo">
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Endereço </br> completo</th>
+            <th>Telefone</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </section>
+</body>
+</html>
